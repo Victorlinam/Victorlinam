@@ -92,7 +92,7 @@ https://github.com/Victorlinam/Vic-Linam-weather-analytics
 
 <p align="center">
   <img 
-    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Victorlinam&theme=github_dark" 
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Victorlinam&bg_color=000000&color=ff6600&line=ff6600&point=ffffff&area=true&hide_border=true" 
     width="100%"
   />
 </p>
