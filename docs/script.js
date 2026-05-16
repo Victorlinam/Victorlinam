@@ -1,11 +1,21 @@
 const canvas = document.getElementById('warp-canvas');
 const ctx = canvas.getContext('2d');
+
 const nodes = Array.from({ length: 75 }, () => ({
   x: Math.random() * innerWidth,
   y: Math.random() * innerHeight,
   vx: (Math.random() - 0.5) * 0.8,
   vy: (Math.random() - 0.5) * 0.8,
   size: Math.random() * 2.2 + 0.5
+}));
+
+const snowflakes = Array.from({ length: 140 }, () => ({
+  x: Math.random() * innerWidth,
+  y: Math.random() * innerHeight,
+  r: Math.random() * 2.2 + 0.6,
+  vy: Math.random() * 1.2 + 0.35,
+  vx: (Math.random() - 0.5) * 0.35,
+  drift: Math.random() * Math.PI * 2
 }));
 
 let pointer = { x: innerWidth / 2, y: innerHeight / 2 };
@@ -15,8 +25,30 @@ function resize() {
   canvas.height = innerHeight;
 }
 
+function drawSnow() {
+  for (const flake of snowflakes) {
+    flake.drift += 0.01;
+    flake.x += flake.vx + Math.sin(flake.drift) * 0.25;
+    flake.y += flake.vy;
+
+    if (flake.y > canvas.height + flake.r) {
+      flake.y = -flake.r;
+      flake.x = Math.random() * canvas.width;
+    }
+    if (flake.x < -5) flake.x = canvas.width + 5;
+    if (flake.x > canvas.width + 5) flake.x = -5;
+
+    ctx.beginPath();
+    ctx.fillStyle = 'rgba(255, 248, 225, 0.72)';
+    ctx.arc(flake.x, flake.y, flake.r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  drawSnow();
 
   for (const n of nodes) {
     const dx = pointer.x - n.x;
