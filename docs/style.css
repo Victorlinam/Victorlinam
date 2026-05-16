@@ -2,16 +2,16 @@
   --bg: #05070e;
   --panel: rgba(16, 19, 32, 0.72);
   --text: #f4f7ff;
-  --muted: #b8c0d9;
-  --accent: #7af7ff;
-  --accent-2: #b68cff;
+  --muted: #d6d1b5;
+  --accent: #ffd60a;
+  --accent-2: #ffb703;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
 body {
   font-family: 'Space Grotesk', system-ui, sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 15% 15%, #1b2040, var(--bg) 55%);
+  background: radial-gradient(circle at 15% 15%, #2a2400, var(--bg) 55%);
 }
 #warp-canvas { position: fixed; inset: 0; z-index: -1; }
 .nav-shell { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(8px); }
@@ -34,7 +34,7 @@ h1 { font-size: clamp(2.5rem, 8vw, 5.8rem); margin: 0; line-height: .94; }
 .hero-cta { display: flex; gap: .8rem; flex-wrap: wrap; }
 .btn { text-decoration: none; padding: .8rem 1.2rem; border-radius: 999px; font-weight: 600; }
 .btn-primary { background: linear-gradient(120deg, var(--accent), var(--accent-2)); color: #03040a; }
-.btn-ghost { border: 1px solid #94a3c8; color: var(--text); }
+.btn-ghost { border: 1px solid #b49b2b; color: var(--text); }
 .panel {
   margin: 2rem 0;
   background: var(--panel);
@@ -61,6 +61,6 @@ footer { text-align: center; color: var(--muted); padding: 2.2rem 1rem; }
 .reveal.show { opacity: 1; transform: translateY(0); }
 @media (max-width: 760px) {
   .menu-btn { display: block; }
-  .menu { position: absolute; top: 64px; right: 1rem; display: none; flex-direction: column; background: #0d1222; padding: .7rem; border-radius: .7rem; }
+  .menu { position: absolute; top: 64px; right: 1rem; display: none; flex-direction: column; background: #161202; padding: .7rem; border-radius: .7rem; }
   .menu.open { display: flex; }
 }

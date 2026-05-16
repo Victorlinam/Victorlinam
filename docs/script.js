@@ -35,7 +35,7 @@ function draw() {
     if (n.y < 0 || n.y > canvas.height) n.vy *= -1;
 
     ctx.beginPath();
-    ctx.fillStyle = 'rgba(122,247,255,0.85)';
+    ctx.fillStyle = 'rgba(255,214,10,0.9)';
     ctx.arc(n.x, n.y, n.size, 0, Math.PI * 2);
     ctx.fill();
   }
@@ -45,7 +45,7 @@ function draw() {
       const a = nodes[i], b = nodes[j];
       const d = Math.hypot(a.x - b.x, a.y - b.y);
       if (d < 120) {
-        ctx.strokeStyle = `rgba(182,140,255,${(1 - d / 120) * 0.35})`;
+        ctx.strokeStyle = `rgba(255,183,3,${(1 - d / 120) * 0.38})`;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
