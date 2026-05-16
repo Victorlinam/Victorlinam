@@ -8,6 +8,12 @@ Data Analyst • Software Developer • Automation Engineer
 Building scalable data systems, automation tools, and intelligent analytics solutions.
 </p>
 
+<p align="center">
+  <a href="https://github.com/Victorlinam">
+    <img src="https://komarev.com/ghpvc/?username=Victorlinam&label=Profile%20Views&color=ff6600&style=flat" alt="profile views" />
+  </a>
+</p>
+
 ---
 
 ## 🚀 About Me
@@ -28,27 +34,37 @@ Building scalable data systems, automation tools, and intelligent analytics solu
 ## 🛠 Tech Stack
 
 ### Languages
-![Python](https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python)
-![SQL](https://img.shields.io/badge/SQL-111111?style=for-the-badge&logo=postgresql)
-![JavaScript](https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript)
-![R](https://img.shields.io/badge/R-111111?style=for-the-badge&logo=r)
+
+<p>
+  <img src="https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/SQL-111111?style=for-the-badge&logo=postgresql" />
+  <img src="https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript" />
+  <img src="https://img.shields.io/badge/R-111111?style=for-the-badge&logo=r" />
+</p>
 
 ### Data & Visualization
-![Tableau](https://img.shields.io/badge/Tableau-111111?style=for-the-badge&logo=tableau)
-![Power BI](https://img.shields.io/badge/Power_BI-111111?style=for-the-badge&logo=powerbi)
-![Excel](https://img.shields.io/badge/Excel-111111?style=for-the-badge&logo=microsoftexcel)
+
+<p>
+  <img src="https://img.shields.io/badge/Tableau-111111?style=for-the-badge&logo=tableau" />
+  <img src="https://img.shields.io/badge/Power_BI-111111?style=for-the-badge&logo=powerbi" />
+  <img src="https://img.shields.io/badge/Excel-111111?style=for-the-badge&logo=microsoftexcel" />
+</p>
 
 ### Databases & Tools
-![MySQL](https://img.shields.io/badge/MySQL-111111?style=for-the-badge&logo=mysql)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111111?style=for-the-badge&logo=postgresql)
-![Git](https://img.shields.io/badge/Git-111111?style=for-the-badge&logo=git)
-![GitHub](https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github)
+
+<p>
+  <img src="https://img.shields.io/badge/MySQL-111111?style=for-the-badge&logo=mysql" />
+  <img src="https://img.shields.io/badge/PostgreSQL-111111?style=for-the-badge&logo=postgresql" />
+  <img src="https://img.shields.io/badge/Git-111111?style=for-the-badge&logo=git" />
+  <img src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github" />
+</p>
 
 ---
 
 ## 📌 Featured Projects
 
 ### 📊 DataOps Toolkit
+
 Automation toolkit for data cleaning, validation, ETL workflows, and reporting systems.
 
 🔗 Live Demo:  
@@ -57,6 +73,7 @@ Automation toolkit for data cleaning, validation, ETL workflows, and reporting s
 ---
 
 ### 🌦 Weather Analytics Dashboard
+
 Full-stack weather analytics platform using modern backend architecture and data visualization workflows.
 
 🔗 GitHub Repository:  
@@ -67,15 +84,24 @@ Full-stack weather analytics platform using modern backend architecture and data
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Victorlinam&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=Victorlinam&show_icons=true&theme=transparent&hide_border=true&title_color=ff6600&icon_color=ff6600&text_color=ffffff" 
+    height="180"
+  />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Victorlinam&theme=tokyonight&hide_border=true" />
+  <img 
+    src="https://streak-stats.demolab.com?user=Victorlinam&theme=dark&hide_border=true&ring=ff6600&fire=ff6600&currStreakLabel=ff6600" 
+    height="180"
+  />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Victorlinam&layout=compact&theme=tokyonight&hide_border=true" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Victorlinam&layout=compact&theme=transparent&hide_border=true&title_color=ff6600&text_color=ffffff" 
+    height="180"
+  />
 </p>
 
 ---
@@ -97,6 +123,15 @@ Full-stack weather analytics platform using modern backend architecture and data
 ## 📫 Contact
 
 📧 victorlinam0@gmail.com
+
+---
+
+## ⚡ Current Focus
+
+- Building scalable data automation systems
+- Backend utilities & workflow optimization
+- Data visualization and analytics platforms
+- ETL pipelines and reporting infrastructure
 
 ---
 
