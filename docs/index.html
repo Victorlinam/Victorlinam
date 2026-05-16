@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bertrand Amobi | AI Systems Specialist</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-tighter">
+        Bertrand<span class="text-[#ff6600]">.</span>
+      </div>
+      <div class="hidden md:flex items-center gap-10 text-sm uppercase tracking-widest">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="https://www.linkedin.com/in/bertrand-amobi-9873b2405/" target="_blank"
+         class="text-sm px-6 py-3 border border-[#ff6600] hover:bg-[#ff6600] hover:text-black transition-colors">
+        LinkedIn
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-screen flex items-center relative">
+    <div class="rolling-balls" id="balls-container"></div>
+    
+    <div class="max-w-6xl mx-auto px-6 pt-24 relative z-10">
+      <div class="max-w-3xl">
+        <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+          Bertrand Amobi
+        </h1>
+        <p class="text-3xl md:text-4xl text-[#ff6600] font-light mb-8">
+          AI Systems Specialist &amp; Software Engineer
+        </p>
+        <p class="text-xl text-gray-300 max-w-2xl leading-relaxed mb-12">
+          Specializing in AI evaluation, model optimization, and building scalable AI-driven systems for real-world impact.
+        </p>
+        
+        <div class="flex flex-wrap gap-5">
+          <a href="#projects" class="accent-button">View Projects</a>
+          <a href="https://www.linkedin.com/in/bertrand-amobi-9873b2405/" target="_blank" class="border-button">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-xs tracking-widest opacity-60">
+      <div>SCROLL TO EXPLORE</div>
+      <i class="fas fa-chevron-down animate-bounce"></i>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-28 bg-zinc-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-header">About Me</h2>
+      
+      <div class="grid md:grid-cols-12 gap-16 items-center">
+        <div class="md:col-span-7 text-lg leading-relaxed text-gray-300">
+          <p class="mb-8">
+            AI Systems Specialist and Software Engineer with 7+ years of experience in evaluating, improving, 
+            and deploying AI and machine learning systems. Skilled in model evaluation, LLM integration, 
+            prompt analysis, and data-driven decision-making.
+          </p>
+          <p>
+            I bridge cutting-edge research with production-grade engineering to deliver reliable, 
+            scalable AI solutions that drive measurable business impact.
+          </p>
+        </div>
+        
+        <div class="md:col-span-5">
+          <h3 class="text-[#ff6600] uppercase tracking-widest text-sm mb-6">Core Technologies</h3>
+          <div class="tech-grid">
+            <div class="tech-tag">Python</div>
+            <div class="tech-tag">Rust</div>
+            <div class="tech-tag">Java</div>
+            <div class="tech-tag">Go</div>
+            <div class="tech-tag">Node.js</div>
+            <div class="tech-tag">TensorFlow</div>
+            <div class="tech-tag">PyTorch</div>
+            <div class="tech-tag">Scikit-learn</div>
+            <div class="tech-tag">Pandas</div>
+            <div class="tech-tag">NumPy</div>
+            <div class="tech-tag">SageMaker</div>
+            <div class="tech-tag">Kubernetes</div>
+            <div class="tech-tag">Docker</div>
+            <div class="tech-tag">Airflow</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-header">Featured Projects</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="project-card">
+          <div class="h-2 bg-[#ff6600]"></div>
+          <div class="p-10">
+            <h3 class="text-3xl font-semibold mb-4">Bertrand Exchange</h3>
+            <p class="text-gray-400 mb-8 leading-relaxed">
+              Full-stack AI-powered trading exchange platform with React dashboard, real-time market simulation, 
+              and AI-driven insights. Demonstrates AI-driven trading strategies and predictive analytics.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://github.com/bertrandamobi/bertrand-exchange" target="_blank" class="github-btn">GitHub</a>
+              <a href="https://bertrandamobi.github.io/bertrand-exchange/" target="_blank" class="live-btn">Live Demo →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="h-2 bg-[#ff6600]"></div>
+          <div class="p-10">
+            <h3 class="text-3xl font-semibold mb-4">AI Workflow Engine</h3>
+            <p class="text-gray-400 mb-8 leading-relaxed">
+              Orchestrates autonomous AI workflows using LangGraph, OpenAI, vector retrieval (RAG), with 
+              FastAPI backend and Next.js frontend. Scalable platform for automating AI model workflows.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://github.com/bertrandamobi/AI-Workflow-Engine" target="_blank" class="github-btn">GitHub</a>
+              <a href="https://bertrandamobi.github.io/AI-Workflow-Engine/" target="_blank" class="live-btn">Live Demo →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-28 bg-zinc-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-header">Experience</h2>
+      
+      <div class="space-y-16">
+        <div class="grid md:grid-cols-12 gap-8">
+          <div class="md:col-span-4">
+            <p class="text-[#ff6600]">Nov 2024 — Present</p>
+            <h3 class="text-2xl font-semibold mt-2">Senior Software Engineer (AI Systems)</h3>
+            <p class="text-gray-400">Numer AI</p>
+          </div>
+          <div class="md:col-span-8 text-gray-300">
+            <ul class="list-disc pl-6 space-y-3">
+              <li>Led development and optimization of large-scale AI evaluation pipelines.</li>
+              <li>Designed and implemented model monitoring systems using advanced ML techniques.</li>
+              <li>Improved model performance and reduced inference latency by 40%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-8">
+          <div class="md:col-span-4">
+            <p class="text-[#ff6600]">Apr 2021 — Nov 2024</p>
+            <h3 class="text-2xl font-semibold mt-2">Software Engineer</h3>
+            <p class="text-gray-400">Bitget Exchange</p>
+          </div>
+          <div class="md:col-span-8 text-gray-300">
+            <ul class="list-disc pl-6 space-y-3">
+              <li>Built high-performance trading infrastructure and real-time data processing systems.</li>
+              <li>Integrated AI-powered risk assessment and market prediction models.</li>
+              <li>Deployed production AI trading strategies.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-8">
+          <div class="md:col-span-4">
+            <p class="text-[#ff6600]">May 2019 — Apr 2021</p>
+            <h3 class="text-2xl font-semibold mt-2">Software Engineer</h3>
+            <p class="text-gray-400">Zedtech</p>
+          </div>
+          <div class="md:col-span-8 text-gray-300">
+            <ul class="list-disc pl-6 space-y-3">
+              <li>Developed backend services and APIs for enterprise AI applications.</li>
+              <li>Implemented scalable data pipelines using Airflow.</li>
+              <li>Contributed to core machine learning platform infrastructure.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-28 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-semibold mb-8">Let's Build Something Great</h2>
+      <p class="text-xl text-gray-400 mb-12 max-w-md mx-auto">
+        Open to exciting opportunities in AI systems and infrastructure engineering.
+      </p>
+      
+      <div class="flex flex-col md:flex-row gap-8 justify-center text-lg">
+        <a href="mailto:bertrandamobi768@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i> bertrandamobi768@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/bertrand-amobi-9873b2405/" target="_blank" class="contact-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/bertrandamobi" target="_blank" class="contact-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-gray-500 border-t border-white/10">
+    © 2026 Bertrand Amobi. All Rights Reserved.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
