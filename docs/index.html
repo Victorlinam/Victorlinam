@@ -1,224 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Victor Stephen Linam | Data Analyst & Software Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <style>
-    :root { --accent: #ff6600; }
-    body { font-family: 'Inter', system-ui, sans-serif; }
-    .hero-bg { background: radial-gradient(circle at center, #1a1a1a 0%, #000000 70%); }
-    
-    .rolling-balls {
-      position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 1; opacity: 0.18;
-    }
-    .ball {
-      position: absolute; background: var(--accent); border-radius: 50%; filter: blur(1px);
-      animation: roll linear infinite;
-    }
-    @keyframes roll {
-      0% { transform: translateY(-100px) rotate(0deg); }
-      100% { transform: translateY(calc(100vh + 150px)) rotate(1080deg); }
-    }
-    .section-header {
-      position: relative; display: inline-block;
-    }
-    .section-header:after {
-      content: ''; position: absolute; width: 60%; height: 4px; background: var(--accent);
-      bottom: -10px; left: 0;
-    }
-    .project-card {
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .project-card:hover {
-      transform: translateY(-15px);
-      box-shadow: 0 30px 60px -15px rgb(255 102 0 / 0.3);
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Victor Stephen Linam — Data Analyst & Software Developer portfolio." />
+  <title>Victor Stephen Linam | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-black text-white">
+<body>
+  <canvas id="warp-canvas" aria-hidden="true"></canvas>
 
-  <!-- NAVBAR -->
-  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-md border-b border-white/10 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="text-2xl font-bold tracking-tight">Victor Linam<span class="text-[#ff6600]">.</span></div>
-      <div class="hidden md:flex gap-10 text-sm uppercase tracking-widest">
-        <a href="#about" class="hover:text-[#ff6600] transition">About</a>
-        <a href="#projects" class="hover:text-[#ff6600] transition">Projects</a>
-        <a href="#experience" class="hover:text-[#ff6600] transition">Experience</a>
-        <a href="#contact" class="hover:text-[#ff6600] transition">Contact</a>
+  <header class="nav-shell">
+    <nav class="nav">
+      <a class="brand" href="#top">Victor Linam<span>.</span></a>
+      <button id="menu-btn" class="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      <div id="menu" class="menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- HERO -->
-  <section class="hero-bg min-h-screen flex items-center relative">
-    <div class="rolling-balls" id="balls"></div>
-    <div class="max-w-6xl mx-auto px-6 pt-20 relative z-10">
-      <h1 class="text-6xl md:text-7xl font-bold tracking-tighter">Victor Stephen Linam</h1>
-      <p class="text-3xl md:text-4xl text-[#ff6600] mt-3">Data Analyst & Software Developer</p>
-      <p class="max-w-2xl text-lg text-gray-300 mt-8">New York, United States</p>
-      
-      <div class="mt-10 flex flex-wrap gap-5">
-        <a href="#projects" class="bg-[#ff6600] text-black font-semibold px-8 py-4 rounded-full hover:bg-orange-500 transition">
-          View Projects
-        </a>
-        <a href="https://www.linkedin.com/in/victor-linam-56501440a/" target="_blank" 
-           class="border border-white/60 hover:border-[#ff6600] px-8 py-4 rounded-full transition">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+  <main id="top">
+    <section class="hero reveal">
+      <p class="kicker">Interactive Portfolio Experience</p>
+      <h1>Victor Stephen Linam</h1>
+      <p class="subtitle">Data Analyst • Software Developer • Automation Architect</p>
+      <p class="hero-copy">A cinematic, interactive profile crafted for speed, accessibility, and GitHub Pages hosting — designed to feel alive on every scroll.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Explore Work</a>
+        <a href="https://github.com/Victorlinam" target="_blank" rel="noreferrer" class="btn btn-ghost">GitHub</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SUMMARY -->
-  <section id="about" class="py-24 bg-zinc-950">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="section-header text-5xl font-semibold mb-12">Professional Summary</h2>
-      <p class="max-w-3xl text-gray-300 text-[17px] leading-relaxed">
-        Data Analyst and Software Developer with experience in Python, SQL, data visualization, automation, 
-        and backend support. Skilled in building data-driven solutions, analyzing structured datasets, 
-        and developing reporting systems for business and technical teams. 
-        Experienced in debugging, workflow automation, and supporting AI training and evaluation tasks.
-      </p>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="py-20 bg-black">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="section-header text-5xl font-semibold mb-12">Technical Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
-        <div class="bg-zinc-900 p-6 rounded-3xl">Python, SQL, R, JavaScript</div>
-        <div class="bg-zinc-900 p-6 rounded-3xl">Tableau, Power BI</div>
-        <div class="bg-zinc-900 p-6 rounded-3xl">MySQL, PostgreSQL</div>
-        <div class="bg-zinc-900 p-6 rounded-3xl">ETL Pipelines & Data Warehousing</div>
-        <div class="bg-zinc-900 p-6 rounded-3xl">Git, GitHub, API Integration</div>
-        <div class="bg-zinc-900 p-6 rounded-3xl">Data Analysis, Visualization & Automation</div>
+    <section id="about" class="panel reveal">
+      <h2>Professional Summary</h2>
+      <p>Data analyst and software developer with a strong record in automation, ETL, data quality, dashboarding, and backend support. I build reliable systems that turn complex workflows into clean, measurable business outcomes.</p>
+      <div class="chips">
+        <span>Python</span><span>SQL</span><span>R</span><span>JavaScript</span><span>PostgreSQL</span><span>Tableau</span><span>Power BI</span><span>APIs</span>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="py-24 bg-zinc-950">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="section-header text-5xl font-semibold mb-12">Featured Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        
-        <div class="project-card bg-zinc-900 border border-white/10 rounded-3xl overflow-hidden">
-          <div class="h-2 bg-[#ff6600]"></div>
-          <div class="p-9">
-            <h3 class="text-3xl font-semibold mb-4">Data Reporting & Automation Toolkit</h3>
-            <p class="text-gray-400 mb-8 leading-relaxed">
-              Python scripts for automated data cleaning, validation, ETL processes, and business intelligence reporting.
-            </p>
-            <a href="https://victorlinam.github.io/dataops-toolkit/" target="_blank" 
-               class="block w-full text-center py-4 bg-[#ff6600] text-black font-semibold rounded-2xl hover:bg-orange-500">
-              Live Demo →
-            </a>
-          </div>
-        </div>
-
-        <div class="project-card bg-zinc-900 border border-white/10 rounded-3xl overflow-hidden">
-          <div class="h-2 bg-[#ff6600]"></div>
-          <div class="p-9">
-            <h3 class="text-3xl font-semibold mb-4">Weather Analytics Dashboard</h3>
-            <p class="text-gray-400 mb-8 leading-relaxed">
-              Full-stack weather analytics platform using Next.js, Node.js, PostgreSQL, Prisma, Redis, 
-              and Python ML services for real-time forecasting and geospatial analytics.
-            </p>
-            <a href="https://github.com/Victorlinam/Vic-Linam-weather-analytics" target="_blank" 
-               class="block w-full text-center py-4 bg-[#ff6600] text-black font-semibold rounded-2xl hover:bg-orange-500">
-              View on GitHub →
-            </a>
-          </div>
-        </div>
+    <section id="projects" class="panel reveal">
+      <h2>Featured Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Data Reporting & Automation Toolkit</h3>
+          <p>Pipeline automation for data cleaning, validation, ETL orchestration, and executive-ready reporting workflows.</p>
+          <a href="https://victorlinam.github.io/dataops-toolkit/" target="_blank" rel="noreferrer">Live Demo →</a>
+        </article>
+        <article class="card">
+          <h3>Weather Analytics Dashboard</h3>
+          <p>Full-stack analytics platform with forecasting features, geospatial insights, and fast dashboard interactions.</p>
+          <a href="https://github.com/Victorlinam/Vic-Linam-weather-analytics" target="_blank" rel="noreferrer">View on GitHub →</a>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="py-24">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="section-header text-5xl font-semibold mb-12">Experience</h2>
-      <div class="space-y-16">
-        <div>
-          <p class="text-[#ff6600]">September 2006 – Present</p>
-          <h3 class="text-2xl font-semibold mt-2">Software Developer (Freelance / Remote)</h3>
-          <ul class="mt-6 list-disc pl-6 text-gray-300 space-y-3">
-            <li>Developed automation scripts, backend utilities, and data processing solutions using Python and SQL.</li>
-            <li>Built custom reporting tools and workflow automation systems for clients across multiple industries.</li>
-            <li>Provided debugging, troubleshooting, and optimization of existing applications and databases.</li>
-          </ul>
-        </div>
+    <section id="experience" class="panel reveal timeline">
+      <h2>Experience</h2>
+      <article>
+        <span>September 2006 – Present</span>
+        <h3>Software Developer (Freelance / Remote)</h3>
+      </article>
+      <article>
+        <span>2008 – 2010</span>
+        <h3>Data Analyst — Aha Analytics, Sheffield, UK</h3>
+      </article>
+      <article>
+        <span>2005 – 2006</span>
+        <h3>HR Data Analyst / Technical Support — Sheffield, UK</h3>
+      </article>
+    </section>
 
-        <div>
-          <p class="text-[#ff6600]">2008 – 2010</p>
-          <h3 class="text-2xl font-semibold mt-2">Data Analyst — Aha Analytics, Sheffield, UK</h3>
-          <ul class="mt-6 list-disc pl-6 text-gray-300 space-y-3">
-            <li>Collected, cleaned, and analyzed structured data using SQL and Python.</li>
-            <li>Developed automated reporting scripts and dashboards in Tableau and Power BI.</li>
-            <li>Optimized reporting workflows and data quality.</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="text-[#ff6600]">2005 – 2006</p>
-          <h3 class="text-2xl font-semibold mt-2">HR Data Analyst / Technical Support — Sheffield, UK</h3>
-          <ul class="mt-6 list-disc pl-6 text-gray-300 space-y-3">
-            <li>Managed databases, IT systems, and backend infrastructure.</li>
-            <li>Performed data entry, debugging, and technical support tasks.</li>
-          </ul>
-        </div>
+    <section id="contact" class="panel reveal contact">
+      <h2>Let’s Build Something Valuable</h2>
+      <a href="mailto:victorlinam0@gmail.com">victorlinam0@gmail.com</a>
+      <div>
+        <a href="https://www.linkedin.com/in/victor-linam-56501440a/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Victorlinam" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-24 bg-zinc-950">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-semibold mb-6">Get In Touch</h2>
-      <a href="mailto:victorlinam0@gmail.com" class="text-2xl hover:text-[#ff6600] transition-colors block mb-8">
-        victorlinam0@gmail.com
-      </a>
-      <div class="flex justify-center gap-10 text-4xl">
-        <a href="https://www.linkedin.com/in/victor-linam-56501440a/" target="_blank" class="hover:text-[#ff6600]"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Victorlinam" target="_blank" class="hover:text-[#ff6600]"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="py-8 text-center text-sm text-gray-500 border-t border-white/10">
-    © 2026 Victor Stephen Linam. All Rights Reserved.
-  </footer>
-
-  <script>
-    // Rolling balls background
-    function createBalls() {
-      const container = document.getElementById('balls');
-      for (let i = 0; i < 22; i++) {
-        const ball = document.createElement('div');
-        const size = Math.random() * 70 + 35;
-        ball.className = 'ball';
-        ball.style.width = `${size}px`;
-        ball.style.height = `${size}px`;
-        ball.style.left = `${Math.random() * 100}vw`;
-        ball.style.animationDuration = `${Math.random() * 25 + 20}s`;
-        ball.style.animationDelay = `-${Math.random() * 30}s`;
-        container.appendChild(ball);
-      }
-    }
-    window.onload = createBalls;
-
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+  <footer>© 2026 Victor Stephen Linam. Built for GitHub Pages.</footer>
+  <script src="script.js"></script>
 </body>
 </html>
